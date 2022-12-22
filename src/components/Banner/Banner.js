@@ -55,37 +55,8 @@ function Banner() {
             Get all the Info regarding your favorite Crypto Currency
           </Typography>
 
-          <Typography
-            variant="subtitle2"
-            style={{
-              color: "white",
-              textTransform: "capitalize",
-              fontFamily: "Montserrat",
-            }}
-          >
-            - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-          </Typography>
-          <Typography
-            variant="subtitle2"
-            style={{
-              color: "#eebc1d",
-              textTransform: "capitalize",
-              fontFamily: "Montserrat",
-              fontSize:'1.2rem',
-              fontWeight:'bold'
-            }}
-          >
-           ~ : By : ~
-          </Typography>
-          <Typography variant="subtitle2"
-            style={{
-              color: "#eebc1d",
-              textTransform: "capitalize",
-              fontFamily: "Montserrat",
-              fontSize:'1.2rem',
-            }}>
               
-            </Typography>
+            </Typography> */}
         </div>
         <Carousel />
       </Container>
