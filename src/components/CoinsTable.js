@@ -52,17 +52,17 @@ export default function CoinsTable() {
         color: "gold",
       },
     },
-    heading:{
-      [Sizes.down("md")]: {
-        fontSize:'.8rem',
+    heading: {
+      [Sizes.down("sm")]: {
+        fontSize: '.8rem',
       },
     },
-    searchBox:{
-      
-        [Sizes.down("md")]: {
-          width: "90% !important",
-        },
-      
+    searchBox: {
+
+      [Sizes.down("md")]: {
+        width: "90% !important",
+      },
+
     }
   });
 
@@ -108,7 +108,7 @@ export default function CoinsTable() {
           style={{ margin: 18, fontFamily: "Montserrat" }}
           className={classes.heading}
         >
-          Cryptocurrency Prices by Market Cap
+          Prices by Market Cap
         </Typography>
         <TextField
           label="Search For a Crypto Currency..."
