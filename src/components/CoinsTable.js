@@ -20,6 +20,11 @@ import axios from "axios";
 import { CoinList } from "../config/api";
 import { useHistory } from "react-router-dom";
 import { CryptoState } from "../CryptoContext";
+import Sizes from '../styles/Sizes'
+// import { makeStyles } from "@material-ui/core";
+
+
+
 
 export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -47,6 +52,18 @@ export default function CoinsTable() {
         color: "gold",
       },
     },
+    heading:{
+      [Sizes.down("md")]: {
+        fontSize:'.8rem',
+      },
+    },
+    searchBox:{
+      
+        [Sizes.down("md")]: {
+          width: "90% !important",
+        },
+      
+    }
   });
 
   const classes = useStyles();
@@ -89,6 +106,7 @@ export default function CoinsTable() {
         <Typography
           variant="h4"
           style={{ margin: 18, fontFamily: "Montserrat" }}
+          className={classes.heading}
         >
           Cryptocurrency Prices by Market Cap
         </Typography>
@@ -97,6 +115,7 @@ export default function CoinsTable() {
           variant="outlined"
           style={{ marginBottom: 20, width: "100%" }}
           onChange={(e) => setSearch(e.target.value)}
+          className={classes.searchBox}
         />
         <TableContainer component={Paper}>
           {loading ? (

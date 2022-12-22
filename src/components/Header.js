@@ -13,6 +13,8 @@ import {
 } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
 import { CryptoState } from "../CryptoContext";
+import Sizes from "../styles/Sizes";
+import coinlogo from '../coinlogo.png'
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -21,7 +23,18 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Montserrat",
     fontWeight: "bold",
     cursor: "pointer",
+    [Sizes.down("md")]: {
+      fontSize: '.8rem',width:"60%"
+    },
   },
+  select: {
+    width: 100, height: 40, marginLeft: 15,
+    [Sizes.down("md")]: {
+      width: "40%",
+      height:'2rem'
+    },
+  }
+
 }));
 
 const darkTheme = createTheme({
@@ -57,7 +70,8 @@ function Header() {
               labelId="demo-simple-select-label"
               id="demo-simple-select"
               value={currency}
-              style={{ width: 100, height: 40, marginLeft: 15 }}
+              className={classes.select}
+              style={{}}
               onChange={(e) => setCurrency(e.target.value)}
             >
               <MenuItem value={"USD"}>USD</MenuItem>

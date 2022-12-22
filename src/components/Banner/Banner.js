@@ -1,5 +1,6 @@
 import { Container, makeStyles, Typography } from "@material-ui/core";
 import Carousel from "./Carousel";
+import Sizes from "../../styles/Sizes";
 
 const useStyles = makeStyles((theme) => ({
   banner: {
@@ -25,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
   },
+  heading:{
+    [Sizes.down("md")]: {
+      fontSize:'2rem'
+    },
+  }
 }));
 
 function Banner() {
@@ -41,6 +47,7 @@ function Banner() {
               marginBottom: 15,
               fontFamily: "Montserrat",
             }}
+            className={classes.heading}
           >
             Crypto Hunter
           </Typography>
