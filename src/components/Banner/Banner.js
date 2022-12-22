@@ -55,8 +55,9 @@ function Banner() {
             Get all the Info regarding your favorite Crypto Currency
           </Typography>
 
-              
-            </Typography> */}
+          
+            - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+          
         </div>
         <Carousel />
       </Container>
